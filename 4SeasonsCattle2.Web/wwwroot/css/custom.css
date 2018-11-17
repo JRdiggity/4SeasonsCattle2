@@ -1,4 +1,9 @@
 ﻿@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:400,400i,700,700i");
+.hidden {
+  overflow: hidden;
+  display: none;
+  visibility: hidden; }
+
 header.masthead .scroll-down .btn {
   color: black;
   border: 2px solid black;
@@ -18,6 +23,19 @@ header.masthead .scroll-down .btn {
   background-size: 50%, 50%;
   border-radius: 50%;
   border: 1px solid black; }
+
+#bullBtn {
+  color: black;
+  background: white;
+  border-color: black;
+  text-align: center; }
+
+#bullBtn:hover, #bullBtn:focus, #bullBtn:active, #bullBtn.active {
+  color: black;
+  background-color: #F9F9F9;
+  border-color: black;
+  text-align: center;
+  /*display: flex;*/ }
 
 #buyBtn {
   color: black;
