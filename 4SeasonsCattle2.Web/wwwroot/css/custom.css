@@ -1,4 +1,34 @@
 ﻿@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:400,400i,700,700i");
+
+h4{
+    color: white;
+}
+
+.fa-fw{
+    color: white;
+}
+
+footer.footer .copyright{
+    color: white;
+}
+
+footer.footer p {
+    color: white;
+}
+
+footer.footer a {
+    color: white;
+}
+
+#contactResult {
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #BD462C;
+    position: absolute;
+    font-size: 20px;
+}
+
 @media (max-width: 768px) {
   .masthead {
     background: url("../scss/bgmobile.jpg") no-repeat center top; } }
@@ -62,39 +92,6 @@ header.masthead .scroll-down .btn {
   text-align: center;
   /*display: flex;*/ }
 
-.carousel-item.active, .carousel-item-next, .carousel-item-prev {
-  display: block;
-  color: black; }
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  #quote-carousel {
-    margin-bottom: 0;
-    padding: 0 40px 30px 40px; } }
-
-/* Small devices (tablets, up to 768px) */
-@media (max-width: 768px) {
-  /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
-  #quote-carousel .carousel-indicators {
-    bottom: -20px !important; }
-  #quote-carousel .carousel-indicators li {
-    display: inline-block;
-    margin: 0px 5px;
-    width: 15px;
-    height: 15px; }
-  #quote-carousel .carousel-indicators li.active {
-    margin: 0px 5px;
-    width: 20px;
-    height: 20px; } }
-
-.card-pricing.popular {
-  z-index: 1;
-  border: 3px solid #007bff; }
-
-.card-pricing .list-unstyled li {
-  padding: .5rem 0;
-  color: #6c757d; }
-
 hr.colored {
   border-color: #BD462C; }
 
@@ -132,7 +129,7 @@ hr.colored {
   color: red; }
 
 .btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
-  color: black !important;
+  color: #BD462C !important;
   border-color: black !important;
   background-color: #F9F9F9 !important; }
 

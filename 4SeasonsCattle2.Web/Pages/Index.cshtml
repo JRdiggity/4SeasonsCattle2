@@ -20,7 +20,7 @@
                     <a class="nav-link js-scroll-trigger" href="#page-top">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#announcements">Announcements</a>
+                    <!--<a class="nav-link js-scroll-trigger" href="#announcements">Announcements</a>-->
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#products">Products</a>
@@ -37,7 +37,31 @@
 </nav>
 
 <!-- Masthead -->
-<header class="masthead" style="background-image: url('/images/bg.jpg');">
+<header>
+    <img sizes="(max-width: 3840px) 100vw, 3840px"
+         srcset="
+/images/hero/bg_zjursu_c_scale,w_50.jpg 50w,
+/images/hero/bg_zjursu_c_scale,w_661.jpg 661w,
+/images/hero/bg_zjursu_c_scale,w_987.jpg 987w,
+/images/hero/bg_zjursu_c_scale,w_1254.jpg 1254w,
+/images/hero/bg_zjursu_c_scale,w_1490.jpg 1490w,
+/images/hero/bg_zjursu_c_scale,w_1702.jpg 1702w,
+/images/hero/bg_zjursu_c_scale,w_1895.jpg 1895w,
+/images/hero/bg_zjursu_c_scale,w_2084.jpg 2084w,
+/images/hero/bg_zjursu_c_scale,w_2280.jpg 2280w,
+/images/hero/bg_zjursu_c_scale,w_2445.jpg 2445w,
+/images/hero/bg_zjursu_c_scale,w_2601.jpg 2601w,
+/images/hero/bg_zjursu_c_scale,w_2777.jpg 2777w,
+/images/hero/bg_zjursu_c_scale,w_2932.jpg 2932w,
+/images/hero/bg_zjursu_c_scale,w_3088.jpg 3088w,
+/images/hero/bg_zjursu_c_scale,w_3246.jpg 3246w,
+/images/hero/bg_zjursu_c_scale,w_3398.jpg 3398w,
+/images/hero/bg_zjursu_c_scale,w_3552.jpg 3552w,
+/images/hero/bg_zjursu_c_scale,w_3696.jpg 3696w,
+/images/hero/bg_zjursu_c_scale,w_3830.jpg 3830w,
+/images/hero/bg_zjursu_c_scale,w_3840.jpg 3840w"
+         src="/images/hero/bg_zjursu_c_scale,w_3840.jpg"
+         alt="">
     <div class="container h-100">
         <div class="row h-100">
             <div class="col-12 my-auto text-center text-white">
@@ -46,40 +70,8 @@
     </div>
 </header>
 
-<!--Announcements-->
-<section class="page-section text-center" id="announecments">
-    <div class="wow fadeIn text-center">
-        <h1>ANNOUNCEMENTS</h1>
-        <hr class="colored">
-    </div>
-    <div class="container">
-        <div id="carouselContent" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active text-center p-4">
-                    <h5>Registered Devon Bull Semen and Embryos Now FOR SALE:</h5>
-                    <p>
-                        <font style="color:#BD462C; font-size:14px; text-transform: uppercase; font-weight: bold; font-style:italic">
-                            We offer semen from several diverse bulls that have worked well <br> in grass-based operations as well as from bulls that cross well for commercial breeders.
-                        </font>
-                    </p>
-                </div>
-                <div class="carousel-item text-center p-4">
-                    <h5>World Devon Congress and National Show: 5/21/18 to 5/28/18.</h5>
-                    <p><font style="color:#BD462C; font-size:14px; text-transform: uppercase; font-weight: bold; font-style:italic">4 Seasons Farm recently hosted the World Devon Congress Mini-tour.<br /> Red Devon Breeders from around the globe visited our farm to see our operation and cattle.</font></p>
-                </div>
-            </div>
-            <br />
-            <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </div>
-</section>
+<!-- Section where announcements would go -->
+
 
 
 <!-- Products Section -->
@@ -158,7 +150,7 @@
                                 <p>
                                     Our bulls offer strong, diverse pedigrees and a proven track record.
                                 </p>
-                                <a href="#gallery-1" class="btn btn-md btn-gallery" id="bullBtn">View Our Bulls</a>
+                                <a href="~/pages/Bulls.cshtml" class="btn btn-md btn-gallery" id="bullBtn">View Our Bulls</a>
                             </div>
                         </div>
                     </div>
@@ -224,28 +216,24 @@
                 <form method="post" id="frmContactForm" asp-page-handler="ContactFormSubmit">
                     <div class="row control-group">
                         <div class="form-group col-12 floating-label-form-group controls">
-                            <!--<label asp-for="Message.Name">Name</label> <input type="text" asp-for="Message.Name" /><br>-->
                             <input type="text" class="form-control" placeholder="Name" asp-for="Name">
                             <span asp-validation-for="Name" class="help-block text-danger"></span>
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-12 floating-label-form-group controls">
-                            <!--<label asp-for="Message.Email">Email</label> <input type="text" asp-for="Message.Email" /><br>-->
                             <input type="email" class="form-control" placeholder="Email Address" asp-for="Email">
                             <span asp-validation-for="Email" class="help-block text-danger"></span>
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-12 floating-label-form-group controls">
-                            <!--<label asp-for="Message.Phone">Phone</label> <input type="text" asp-for="Message.Phone" /><br>-->
                             <input type="tel" class="form-control" placeholder="Phone Number" asp-for="Phone">
                             <span asp-validation-for="Phone" class="help-block text-danger"></span>
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-12 floating-label-form-group controls">
-                            <!--<label asp-for="Message.Body">Message</label> <input type="text" asp-for="Message.Body" /><br>-->
                             <textarea rows="5" class="form-control" placeholder="Message" asp-for="Message"></textarea>
                             <span asp-validation-for="Message" class="help-block text-danger"></span>
                         </div>
@@ -315,7 +303,7 @@
         });
 
         function showContactError() {
-            $("#contactResult").html("Sorry, an error has occurred. Please try again later.").addClass("someredclass").removeClass("d-none");
+            $("#frmContactForm").html("Sorry, an error has occurred. Please try again later.").addClass("someredclass").removeClass("d-none");
         }
     </script>
 }
