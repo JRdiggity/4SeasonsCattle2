@@ -1,33 +1,41 @@
 ﻿@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:400,400i,700,700i");
+a:hover, a:focus {
+  color: black; }
 
-h4{
-    color: white;
-}
+a {
+  color: #BD462C; }
 
-.fa-fw{
-    color: white;
-}
+.text-center {
+  height: 100%; }
 
-footer.footer .copyright{
-    color: white;
-}
+.card-content {
+  height: 100%; }
+
+.btn:focus {
+  outline: none; }
+
+h4 {
+  color: white; }
+
+.fa-fw {
+  color: white; }
+
+footer.footer .copyright {
+  color: white; }
 
 footer.footer p {
-    color: white;
-}
+  color: white; }
 
 footer.footer a {
-    color: white;
-}
+  color: white; }
 
 #contactResult {
-    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: #BD462C;
-    position: absolute;
-    font-size: 20px;
-}
+  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #BD462C;
+  position: absolute;
+  font-size: 20px; }
 
 @media (max-width: 768px) {
   .masthead {
