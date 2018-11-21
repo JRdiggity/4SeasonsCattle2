@@ -1,4 +1,8 @@
 ﻿@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:400,400i,700,700i");
+.btn:focus, .btn:active:focus, .btn.active:focus {
+  outline: none;
+  outline-style: none; }
+
 a:hover, a:focus {
   color: black; }
 
@@ -84,13 +88,17 @@ header.masthead .scroll-down .btn {
   float: left;
   background: white;
   border-color: black;
-  text-align: center; }
+  text-align: center;
+  outline: none;
+  box-shadow: none; }
 
 #buyBtn:hover, #buyBtn:focus, #buyBtn:active, #buyBtn.active {
   color: #BD462C;
   background-color: #F9F9F9;
   border-color: black;
   text-align: center;
+  outline: none;
+  box-shadow: none;
   /*display: flex;*/ }
 
 .open > .dropdown-toggle#buyBtn {
@@ -107,13 +115,15 @@ hr.colored {
   color: #BD462C;
   border-radius: 0;
   border-radius: 5px;
-  background-color: #F9F9F9; }
+  background-color: #F9F9F9;
+  outline: none; }
 
 #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link.active:focus, #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link.active:hover {
   color: #BD462C;
   border-radius: 0;
   border-radius: 5px;
-  background-color: #F9F9F9; }
+  background-color: #F9F9F9;
+  outline: none; }
 
 #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link {
   padding: 15px; }
@@ -256,7 +266,8 @@ a.btn-card {
 #mainNav .navbar-toggler {
   padding: 15px;
   color: black;
-  font-size: 14px; }
+  font-size: 14px;
+  outline: none; }
 
 #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link {
   padding-top: 15px;
@@ -272,7 +283,7 @@ a.btn-card {
    with position:fixed. Width, height, top and left speak
    for themselves. Background we set to 80% white with
    our animation centered, and no-repeating */
-.modal {
+.modalload {
   display: none;
   position: fixed;
   z-index: 1000;
@@ -284,10 +295,10 @@ a.btn-card {
 
 /* When the body has the loading class, we turn
    the scrollbar off with overflow:hidden */
-body.loading .modal {
+body.loading .modalload {
   overflow: hidden; }
 
 /* Anytime the body has the loading class, our
    modal element will be visible */
-body.loading .modal {
+body.loading .modalload {
   display: block; }
