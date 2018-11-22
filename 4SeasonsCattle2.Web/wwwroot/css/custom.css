@@ -1,13 +1,14 @@
 ﻿@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:400,400i,700,700i");
-.btn:focus, .btn:active:focus, .btn.active:focus {
-  outline: none;
-  outline-style: none; }
-
-a:hover, a:focus {
-  color: black; }
+.btn, .btn:focus, .btn.active:focus, .btn:active {
+  outline: none !important;
+  outline-style: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important; }
 
 a {
   color: #BD462C; }
+  a:hover, a:focus {
+    color: black; }
 
 .text-center {
   height: 100%; }
@@ -15,22 +16,13 @@ a {
 .card-content {
   height: 100%; }
 
-.btn:focus {
-  outline: none; }
-
 h4 {
   color: white; }
 
 .fa-fw {
   color: white; }
 
-footer.footer .copyright {
-  color: white; }
-
-footer.footer p {
-  color: white; }
-
-footer.footer a {
+footer.footer .copyright, footer.footer p, footer.footer a {
   color: white; }
 
 #contactResult {
@@ -38,7 +30,6 @@ footer.footer a {
   font-weight: 900;
   text-transform: uppercase;
   color: #BD462C;
-  position: absolute;
   font-size: 20px; }
 
 @media (max-width: 768px) {
@@ -61,27 +52,17 @@ header.masthead .scroll-down .btn {
 .details-card {
   background: white !important; }
 
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  height: 30px;
-  width: 30px;
-  outline: black;
-  background-color: black;
-  background-size: 50%, 50%;
-  border-radius: 50%;
-  border: 1px solid black; }
-
 #bullBtn {
   color: black;
   background: white;
   border-color: black;
   text-align: center; }
-
-#bullBtn:hover, #bullBtn:focus, #bullBtn:active, #bullBtn.active {
-  color: #BD462C;
-  background-color: #F9F9F9;
-  border-color: black;
-  text-align: center;
-  /*display: flex;*/ }
+  #bullBtn:hover, #bullBtn:focus, #bullBtn:active, #bullBtn.active {
+    color: #BD462C;
+    background-color: #F9F9F9;
+    border-color: black;
+    text-align: center;
+    /*display: flex;*/ }
 
 #buyBtn {
   color: black;
@@ -91,15 +72,14 @@ header.masthead .scroll-down .btn {
   text-align: center;
   outline: none;
   box-shadow: none; }
-
-#buyBtn:hover, #buyBtn:focus, #buyBtn:active, #buyBtn.active {
-  color: #BD462C;
-  background-color: #F9F9F9;
-  border-color: black;
-  text-align: center;
-  outline: none;
-  box-shadow: none;
-  /*display: flex;*/ }
+  #buyBtn:hover, #buyBtn:focus, #buyBtn:active, #buyBtn.active {
+    color: #BD462C;
+    background-color: #F9F9F9;
+    border-color: black;
+    text-align: center;
+    outline: none;
+    box-shadow: none;
+    /*display: flex;*/ }
 
 .open > .dropdown-toggle#buyBtn {
   color: white;
@@ -111,35 +91,43 @@ header.masthead .scroll-down .btn {
 hr.colored {
   border-color: #BD462C; }
 
-#mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link.active {
-  color: #BD462C;
-  border-radius: 0;
-  border-radius: 5px;
-  background-color: #F9F9F9;
-  outline: none; }
-
-#mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link.active:focus, #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link.active:hover {
-  color: #BD462C;
-  border-radius: 0;
-  border-radius: 5px;
-  background-color: #F9F9F9;
-  outline: none; }
-
 #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link {
-  padding: 15px; }
-
-#mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link {
+  padding: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
   color: black; }
-
-#mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link:focus, #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link:hover {
-  color: #BD462C;
-  background-color: #f9f9f9; }
+  #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link.active {
+    color: #BD462C;
+    border-radius: 0;
+    border-radius: 5px;
+    background-color: #F9F9F9;
+    outline: none; }
+    #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link.active:focus, #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link.active:hover {
+      color: #BD462C;
+      border-radius: 0;
+      border-radius: 5px;
+      background-color: #F9F9F9;
+      outline: none; }
+  #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link:focus, #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link:hover {
+    color: #BD462C;
+    background-color: #f9f9f9; }
 
 #mainNav.navbar-shrink {
   padding: 5px 0;
   background-color: white; }
+
+#mainNav {
+  background-color: white;
+  padding: 5px 0; }
+  #mainNav .navbar-toggler {
+    padding: 15px;
+    color: black;
+    font-size: 14px;
+    outline: none; }
+  #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: black; }
 
 .floating-label-form-group-with-value label {
   top: 0;
@@ -149,23 +137,8 @@ hr.colored {
 .btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
   color: #BD462C !important;
   border-color: black !important;
-  background-color: #F9F9F9 !important; }
-
-.owl-carousel.owl-theme .owl-controls .owl-prev, .owl-carousel.owl-theme .owl-controls .owl-next {
-  font-size: 30px !important;
-  line-height: 50px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 40px;
-  height: 60px;
-  margin: auto 0 !important;
-  text-align: center;
-  color: black !important;
-  border-radius: 0 !important;
-  background-color: #BD462C !important;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s; }
+  background-color: #F9F9F9 !important;
+  box-shadow: none; }
 
 /* card details start  */
 section {
@@ -181,55 +154,50 @@ section {
   overflow: hidden;
   border-radius: 0;
   z-index: 1; }
-
-.card-img img {
-  width: 100%;
-  height: auto;
-  display: block; }
-
-.card-img span {
-  position: absolute;
-  top: 15%;
-  left: 12%;
-  background: #1ABC9C;
-  padding: 6px;
-  color: #fff;
-  font-size: 12px;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  transform: translate(-50%, -50%); }
-
-.card-img span h4 {
-  font-size: 12px;
-  margin: 0;
-  padding: 10px 5px;
-  line-height: 0; }
+  .card-img img {
+    width: 100%;
+    height: auto;
+    display: block; }
+  .card-img span {
+    position: absolute;
+    top: 15%;
+    left: 12%;
+    background: #1ABC9C;
+    padding: 6px;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transform: translate(-50%, -50%); }
+    .card-img span h4 {
+      font-size: 12px;
+      margin: 0;
+      padding: 10px 5px;
+      line-height: 0; }
 
 .card-desc {
   padding: 1.25rem; }
-
-.card-desc h3 {
-  color: #000000;
-  font-weight: 600;
-  font-size: 1.5em;
-  line-height: 1.3em;
-  margin-top: 0;
-  margin-bottom: 5px;
-  padding: 0; }
-
-.card-desc p {
-  color: #747373;
-  font-size: 14px;
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 1.5;
-  margin: 0px;
-  margin-bottom: 20px;
-  padding: 0;
-  font-family: 'Raleway', sans-serif; }
+  .card-desc h3 {
+    color: #000000;
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 0; }
+  .card-desc p {
+    color: #747373;
+    font-size: 14px;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0px;
+    margin-bottom: 20px;
+    padding: 0;
+    font-family: 'Raleway', sans-serif; }
 
 .btn-card {
   background-color: #1ABC9C;
@@ -251,28 +219,12 @@ section {
   white-space: normal;
   word-wrap: break-word;
   color: #fff; }
-
-.btn-card:hover {
-  background: orange; }
+  .btn-card:hover {
+    background: orange; }
 
 a.btn-card {
   text-decoration: none;
   color: #fff; }
-
-#mainNav {
-  background-color: white; }
-
-/* End card section */
-#mainNav .navbar-toggler {
-  padding: 15px;
-  color: black;
-  font-size: 14px;
-  outline: none; }
-
-#mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  color: black; }
 
 .card {
   margin: 10px 10px; }
@@ -296,9 +248,8 @@ a.btn-card {
 /* When the body has the loading class, we turn
    the scrollbar off with overflow:hidden */
 body.loading .modalload {
-  overflow: hidden; }
+  overflow: hidden;
+  display: block; }
 
 /* Anytime the body has the loading class, our
    modal element will be visible */
-body.loading .modalload {
-  display: block; }

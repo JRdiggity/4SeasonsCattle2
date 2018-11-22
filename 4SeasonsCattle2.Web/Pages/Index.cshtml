@@ -3,11 +3,15 @@
 @{
     ViewData["Title"] = "Home page";
 }
+
+@section Head {
+    <script defer type="text/javascript" src="~/js/contact.js"></script>
+}
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
     <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <img class="img-fluid" src="~/images/logoblack.png" alt="">
+            <img class="img-fluid" src="~/images/logoblack-min.png" href="/" alt="">
         </a>
         <a class="js-scroll-trigger btn btn-md" href="#contact" id="buyBtn">BUY</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,16 +21,16 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#page-top">Home</a>
+                    <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#page-top">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#products">Products</a>
+                    <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#products">Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                    <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                    <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -37,27 +41,27 @@
 <header>
     <img sizes="(max-width: 3840px) 100vw, 3840px"
          srcset="
-/images/hero/bg_zjursu_c_scale,w_50.jpg 50w,
-/images/hero/bg_zjursu_c_scale,w_661.jpg 661w,
-/images/hero/bg_zjursu_c_scale,w_987.jpg 987w,
-/images/hero/bg_zjursu_c_scale,w_1254.jpg 1254w,
-/images/hero/bg_zjursu_c_scale,w_1490.jpg 1490w,
-/images/hero/bg_zjursu_c_scale,w_1702.jpg 1702w,
-/images/hero/bg_zjursu_c_scale,w_1895.jpg 1895w,
-/images/hero/bg_zjursu_c_scale,w_2084.jpg 2084w,
-/images/hero/bg_zjursu_c_scale,w_2280.jpg 2280w,
-/images/hero/bg_zjursu_c_scale,w_2445.jpg 2445w,
-/images/hero/bg_zjursu_c_scale,w_2601.jpg 2601w,
-/images/hero/bg_zjursu_c_scale,w_2777.jpg 2777w,
-/images/hero/bg_zjursu_c_scale,w_2932.jpg 2932w,
-/images/hero/bg_zjursu_c_scale,w_3088.jpg 3088w,
-/images/hero/bg_zjursu_c_scale,w_3246.jpg 3246w,
-/images/hero/bg_zjursu_c_scale,w_3398.jpg 3398w,
-/images/hero/bg_zjursu_c_scale,w_3552.jpg 3552w,
-/images/hero/bg_zjursu_c_scale,w_3696.jpg 3696w,
-/images/hero/bg_zjursu_c_scale,w_3830.jpg 3830w,
-/images/hero/bg_zjursu_c_scale,w_3840.jpg 3840w"
-         src="/images/hero/bg_zjursu_c_scale,w_3840.jpg"
+/images/hero/bg_zjursu_c_scale,w_50-min.jpg 50w,
+/images/hero/bg_zjursu_c_scale,w_661-min.jpg 661w,
+/images/hero/bg_zjursu_c_scale,w_987-min.jpg 987w,
+/images/hero/bg_zjursu_c_scale,w_1254-min.jpg 1254w,
+/images/hero/bg_zjursu_c_scale,w_1490-min.jpg 1490w,
+/images/hero/bg_zjursu_c_scale,w_1702-min.jpg 1702w,
+/images/hero/bg_zjursu_c_scale,w_1895-min.jpg 1895w,
+/images/hero/bg_zjursu_c_scale,w_2084-min.jpg 2084w,
+/images/hero/bg_zjursu_c_scale,w_2280-min.jpg 2280w,
+/images/hero/bg_zjursu_c_scale,w_2445-min.jpg 2445w,
+/images/hero/bg_zjursu_c_scale,w_2601-min.jpg 2601w,
+/images/hero/bg_zjursu_c_scale,w_2777-min.jpg 2777w,
+/images/hero/bg_zjursu_c_scale,w_2932-min.jpg 2932w,
+/images/hero/bg_zjursu_c_scale,w_3088-min.jpg 3088w,
+/images/hero/bg_zjursu_c_scale,w_3246-min.jpg 3246w,
+/images/hero/bg_zjursu_c_scale,w_3398-min.jpg 3398w,
+/images/hero/bg_zjursu_c_scale,w_3552-min.jpg 3552w,
+/images/hero/bg_zjursu_c_scale,w_3696-min.jpg 3696w,
+/images/hero/bg_zjursu_c_scale,w_3830-min.jpg 3830w,
+/images/hero/bg_zjursu_c_scale-min,w_3840-min.jpg 3840w"
+         src="/images/hero/bg_zjursu_c_scale,w_3840-min.jpg"
          alt="">
     <div class="container h-100">
         <div class="row h-100">
@@ -68,9 +72,6 @@
 </header>
 
 <!-- Section where announcements would go -->
-
-
-
 <!-- Products Section -->
 
 <section class="page-section text-center" id="products">
@@ -79,11 +80,11 @@
         <hr class="colored">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3 mb-4">
                     <div class="text-center">
                         <div class="card-content">
                             <div class="card-img">
-                                <img src="~/images/steak.jpg" alt="">
+                                <img src="~/images/steak-min.jpg" alt="">
                             </div>
                             <div class="card-desc">
                                 <h3>Grass-Fed Beef</h3>
@@ -96,11 +97,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 mb-4">
                     <div class="text-center">
                         <div class="card-content">
                             <div class="card-img">
-                                <img src="~/images/porkchops.jpg" alt="">
+                                <img src="~/images/porkchops-min.jpg" alt="">
                             </div>
                             <div class="card-desc">
                                 <h3>Pork</h3>
@@ -113,11 +114,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 mb-4">
                     <div class="text-center">
                         <div class="card-content">
                             <div class="card-img">
-                                <img src="~/images/cattle.jpg" alt="">
+                                <img src="~/images/cattle-min.jpg" alt="">
                             </div>
                             <div class="card-desc">
                                 <h3>Cattle</h3>
@@ -129,11 +130,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 mb-4">
                     <div class="text-center">
                         <div class="card-content">
                             <div class="card-img">
-                                <img src="~/images/bull-semen.jpg" alt="">
+                                <img src="~/images/bull-semen-min.jpg" alt="">
                             </div>
                             <div class="card-desc">
                                 <h3>Bull Semen</h3>
@@ -156,10 +157,12 @@
     <div class="container-fluid">
         <div class="wow fadeIn text-center">
             <h1>WHAT WE DO</h1>
-            <p class="mb-0">"We work off a platform of integrity – treating our customers the way we would like to be treated. <br />
-            Visitors are always welcome, and we enjoy helping other farmers get started or improve their herds.<br /> 
-            Please contact us and see if we can fit the needs of your herd or to just talk about Devon cattle."<br /> 
-            -Bob VanKirk</p>
+            <p class="mb-0">
+                "We work off a platform of integrity – treating our customers the way we would like to be treated. <br />
+                Visitors are always welcome, and we enjoy helping other farmers get started or improve their herds.<br />
+                Please contact us and see if we can fit the needs of your herd or to just talk about Devon cattle."<br />
+                -Bob VanKirk
+            </p>
             <hr class="colored">
             <div class="row text-center">
                 <div class="col-lg-6 col-md-6">
@@ -226,62 +229,7 @@
                 </form>
             </div>
         </div>
-        <div id="contactResult" class="d-none row mt-4">
-        </div>
+        <div id="contactResult" class="row mt-4 d-flex justify-content-center"></div>
     </div>
 </section>
-
 <div class="modalload"><!-- Place at bottom of page --></div>
-
-@section Scripts {
-    <script>
-        $(document).ready(function () {
-            // Capture AJAX start/end
-            $body = $("body");
-
-            $(document).on({
-                ajaxStart: function () { $body.addClass("loading"); },
-                ajaxStop: function () { $body.removeClass("loading"); }
-            });
-
-            // Handle contact form submission
-            $("#frmContactForm").submit(function (e) {
-                // Cache this
-                const $this = $(this);
-
-                // Prevent form submission
-                e.preventDefault();
-
-                // Check validity of form
-                const isFormValid = $this.valid();
-
-                if (isFormValid) {
-                    // Submit contact form via AJAX to server
-                    $.ajax({
-                        url: $this.attr('action'),
-                        type: $this.attr('method'),
-                        dataType: 'json',
-                        data: $this.serialize(),
-                        success: function (data) {
-                            if (data === true) {
-                                $("#contactDiv").addClass("d-none");
-                                $("#contactResult").html("Thank you for your submission. Someone will contact you shortly.").removeClass("d-none someredclass");
-                            } else {
-                                showContactError();
-                            }
-                        },
-                        error: function (xhr, err) {
-                            showContactError();
-                        }
-                    });
-                }
-
-                return false;
-            });
-        });
-
-        function showContactError() {
-            $("#frmContactForm").html("Sorry, an error has occurred. Please try again later.").addClass("someredclass").removeClass("d-none");
-        }
-    </script>
-}
