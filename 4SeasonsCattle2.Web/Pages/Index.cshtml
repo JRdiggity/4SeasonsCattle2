@@ -42,7 +42,7 @@
                         <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#contact">Latest News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#contact">Gallery</a>
+                        <a asp-page="/Gallery" class="nav-link js-scroll-trigger">Gallery</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#contact">Contact</a>
@@ -102,7 +102,7 @@
                                 <img src="~/images/bull-semen-min.jpg" alt="">
                             </div>
                             <div class="card-desc">
-                                <h3>Bull Semen</h3>
+                                <h3>Bull Semen and Embryos</h3>
                                 <hr class="colored">
                                 <p>
                                     Our bulls offer strong, diverse pedigrees and a proven track record.
@@ -122,7 +122,7 @@
                                 <h3>Cattle</h3>
                                 <hr class="colored">
                                 <p>
-                                    4 Seasons Farm offers some of the finest Registered Devon cattle in the country.
+                                    4 Seasons Farm offers some of the finest Registered Devon seedstock bulls, heifers and cows.
                                 </p>
                             </div>
                         </div>
@@ -135,7 +135,7 @@
                                 <img src="~/images/steak-min.jpg" alt="">
                             </div>
                             <div class="card-desc">
-                                <h3>Grass-Fed Beef</h3>
+                                <h3>100% Grass-Fed Beef</h3>
                                 <hr class="colored">
                                 <p>
                                     Sold by 1/4, 1/2, or whole beef:<br />
@@ -152,7 +152,7 @@
                                 <img src="~/images/porkchops-min.jpg" alt="">
                             </div>
                             <div class="card-desc">
-                                <h3>Pork</h3>
+                                <h3>Pasturized Pork</h3>
                                 <hr class="colored">
                                 <p>
                                     Sold by the 1/2 or whole hog:<br />
@@ -234,32 +234,83 @@
                             <span asp-validation-for="Message" class="help-block text-danger"></span>
                         </div>
                     </div>
-                    <!--
-    <div class="row control-group">
-        <div class="form-group col-12 floating-label-form-group controls">
-            <textarea rows="5" class="form-control" placeholder="Address" asp-for="Address"></textarea>
-            <span asp-validation-for="Address" class="help-block text-danger"></span>
-        </div>
-    </div>
-    <div class="row control-group">
-        <div class="form-group col-12 floating-label-form-group controls">
-            <textarea rows="5" class="form-control" placeholder="City" asp-for="City"></textarea>
-            <span asp-validation-for="City" class="help-block text-danger"></span>
-        </div>
-    </div>
-    <div class="row control-group">
-        <div class="form-group col-12 floating-label-form-group controls">
-            <textarea rows="5" class="form-control" placeholder="State" asp-for="State"></textarea>
-            <span asp-validation-for="State" class="help-block text-danger"></span>
-        </div>
-    </div>
-    <div class="row control-group">
-        <div class="form-group col-12 floating-label-form-group controls">
-            <textarea rows="5" class="form-control" placeholder="Zip" asp-for="Zip"></textarea>
-            <span asp-validation-for="Zip" class="help-block text-danger"></span>
-        </div>
-    </div>
-    -->
+                    <div class="row control-group">
+                        <div class="form-group col-12 floating-label-form-group controls">
+                            <input type="text" class="form-control" placeholder="Address" asp-for="Address">
+                            <span asp-validation-for="Address" class="help-block text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-12 floating-label-form-group controls">
+                            <input type="text" class="form-control" placeholder="City" asp-for="City">
+                            <span asp-validation-for="City" class="help-block text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-12 floating-label-form-group controls">
+                            <input type="text" class="form-control" placeholder="State" asp-for="State">
+                            <select>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="DC">District Of Columbia</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                            <span asp-validation-for="State" class="help-block text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-12 floating-label-form-group controls">
+                            <input type="text" class="form-control" placeholder="Zip Code" asp-for="Zip">
+                            <span asp-validation-for="Zip" class="help-block text-danger"></span>
+                        </div>
+                    </div>
                     <br>
                     <div id="success"></div>
                     <div class="row">

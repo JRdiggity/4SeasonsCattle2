@@ -29,6 +29,22 @@ namespace _4SeasonsCattle2.Web.Pages
         [Required]
         public string Message { get; set; }
 
+        [BindProperty]
+        [Required]
+        public string Address { get; set; }
+
+        [BindProperty]
+        [Required]
+        public string City { get; set; }
+
+        [BindProperty]
+        [Required]
+        public string State { get; set; }
+
+        [BindProperty]
+        [Required]
+        public string Zip { get; set; }
+
 
         public JsonResult OnPostContactFormSubmit()
         {
@@ -83,6 +99,38 @@ namespace _4SeasonsCattle2.Web.Pages
                                     </td>
                                     <td>
                                         {Message}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Address</strong>
+                                    </td>
+                                    <td>
+                                        {Address}
+                                    </td>
+                                </tr>
+                                    <tr>
+                                    <td>
+                                        <strong>City</strong>
+                                    </td>
+                                    <td>
+                                        {City}
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td>
+                                        <strong>State</strong>
+                                    </td>
+                                    <td>
+                                        {State}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Zip</strong>
+                                    </td>
+                                    <td>
+                                        {Zip}
                                     </td>
                                 </tr>
                             </table>";

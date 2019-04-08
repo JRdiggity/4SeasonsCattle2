@@ -8,9 +8,18 @@
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div id="tagline">
+        <h4>
+            1837219789
+            <span style="font-size: 20px; margin-left:5px; color: #999;">|</span>
+            <a href="https://www.facebook.com/4seasonscattle/">
+                <i class="fa fa-facebook fa-fw fa-lg" style="color:#3b5998"></i>
+            </a>
+        </h4>
+    </div>
     <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="/">
-            <img class="img-fluid" src="~/images/logoblack-min.png" alt="">
+            <img class="img-fluid" src="~/images/4seasonscattlelogo.png" alt="">
         </a>
         <a class="js-scroll-trigger btn btn-md" href="/#contact" id="buyBtn">BUY</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +38,13 @@
                     <a class="nav-link js-scroll-trigger" href="/#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="/#contact">Contact</a>
+                    <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#contact">Latest News</a>
+                </li>
+                <li class="nav-item">
+                    <a asp-page="/Gallery" class="nav-link js-scroll-trigger">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>

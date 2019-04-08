@@ -285,3 +285,7 @@ h4 {
 @media (max-width: 766px) {
   #mainNav .navbar-brand img {
     height: 35px; } }
+
+select {
+  font-weight: 300;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
