@@ -8,50 +8,51 @@
 
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
-    <div id="tagline">
-        <h4>
-            1837219789
+<div class="page-top fixed-top">
+    <div id="logoTag">
+        <a class="js-scroll-trigger navbar-brand img" href="#page-top" id="logo">
+            <img class="img-fluid" src="~/images/4seasonscattlelogo-min.png" href="/" alt="">
+        </a>
+        <div id="tagline">
+            <a href="#contact">Latest News</a>
+            <span style="font-size: 20px; margin-left:5px; color: #999;">|</span>
+            <a asp-page="/Gallery" class="js-scroll-trigger">Gallery</a>
+            <span style="font-size: 20px; margin-left:5px; color: #999;">|</span>
+            <strong>814.937.6919</strong>
             <span style="font-size: 20px; margin-left:5px; color: #999;">|</span>
             <a href="https://www.facebook.com/4seasonscattle/">
                 <i class="fa fa-facebook fa-fw fa-lg" style="color:#3b5998"></i>
             </a>
-        </h4>
-    </div>
-    <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="/">
-            <img class="img-fluid" src="~/images/4seasonscattlelogo.png" alt="">
-        </a>
-        <a class="js-scroll-trigger btn btn-md" href="/#contact" id="buyBtn">BUY</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa fa-bars"></i>
-            Menu
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="/#products">Products</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="/#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#contact">Latest News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#contact">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#contact">Contact</a>
-                </li>
-            </ul>
         </div>
     </div>
-</nav>
-<br />
+
+    <nav class="navbar navbar-expand-lg" id="mainNav">
+        <div class="container">
+            <a class="js-scroll-trigger btn btn-md" href="#contact" id="buyBtn">BUY</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+                Menu
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#page-top">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
 <!--Carousel Wrapper-->
 <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
     <!--Indicators-->

@@ -279,9 +279,17 @@ h4 {
   font-weight: 900;
   text-transform: uppercase; }
 
-@media (max-width: 766px) {
-  #mainNav .navbar-brand img {
-    height: 35px; } }
+@media (max-width: 724px) {
+  #logo .navbar-brand img {
+    height: 55px; } }
+
+@media (max-width: 724px) {
+  #tagline {
+    font-size: 15px; } }
+
+@media (max-width: 724px) {
+  #logoTag {
+    height: 100px; } }
 
 select {
   font-weight: 300;
@@ -289,3 +297,6 @@ select {
 
 #logoTag {
   background: white; }
+
+#logo {
+  display: inline-block; }
