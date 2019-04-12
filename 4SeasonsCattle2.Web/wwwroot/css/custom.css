@@ -114,10 +114,10 @@ hr.colored {
 
 #mainNav.navbar-shrink {
   padding: 5px 0;
-  background-color: white; }
+  background-color: lightgray; }
 
 #mainNav {
-  background-color: white;
+  background: lightgray;
   padding: 5px 0; }
   #mainNav .navbar-toggler {
     padding: 15px;
@@ -268,11 +268,8 @@ body.loading .modalload {
 #mainNav .navbar-brand img {
   height: 80px; }
 
-#mainNav {
-  background-image: url("../scss/cowhide-min.jpg");
-  background-repeat: repeat-x; }
-
 #tagline {
+  text-align: center;
   float: right; }
 
 h4 {
@@ -289,3 +286,6 @@ h4 {
 select {
   font-weight: 300;
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+#logoTag {
+  background: white; }
