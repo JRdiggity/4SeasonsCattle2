@@ -285,7 +285,8 @@ h4 {
 
 @media (max-width: 724px) {
   #tagline {
-    font-size: 15px; } }
+    font-size: 15px;
+    float: right; } }
 
 @media (max-width: 724px) {
   #logoTag {
