@@ -11,12 +11,10 @@
 <div class="page-top fixed-top">
     <div id="logoTag">
         <div id="logo">
-            <a class="js-scroll-trigger navbar-brand img" href="#page-top">
-                <img class="img-fluid" src="~/images/4seasonscattlelogo-min.jpg" href="/" alt="">
-            </a>
+            <a asp-page="/Index" class="js-scroll-trigger"><img class="img-fluid" src="~/images/4seasonscattlelogo-min.jpg" href="/" alt=""></a>                       
         </div>
         <div id="tagline">
-            <a href="#contact">Latest News</a>
+            <a asp-page="/News" class="js-scroll-trigger">Latest News</a>
             <span style="font-size: 20px; margin-left:5px; color: #999;">|</span>
             <a asp-page="/Gallery" class="js-scroll-trigger">Gallery</a>
             <span style="font-size: 20px; margin-left:5px; color: #999;">|</span>
@@ -38,16 +36,16 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#page-top">Home</a>
+                        <a asp-page="/Index" class="js-scroll-trigger nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#products">Products</a>
+                        <a asp-page="/Index" class="js-scroll-trigger nav-link">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#about">About</a>
+                        <a asp-page="/Index" class="js-scroll-trigger nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#contact">Contact</a>
+                        <a asp-page="/Index" class="js-scroll-trigger nav-link">Contact</a>
                     </li>
                 </ul>
             </div>
