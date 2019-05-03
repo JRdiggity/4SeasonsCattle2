@@ -483,7 +483,7 @@ h2 {
 }
 
 
-#phoneNumber{
+#phoneNumber {
     font-size: 22px;
 }
 
@@ -498,7 +498,6 @@ h2 {
     border: solid 3px white;
 }
 
-
 #widgets > div {
     display: inline-block;
 }
@@ -508,34 +507,15 @@ h2 {
     color: #495057;
 }
 
-.form-control{
+.form-control {
     color: red;
-}
-
-.owl-carousel.owl-theme .owl-controls {
-    .owl-prev, .owl-next {
-        font-size: 30px !important;
-        line-height: 50px;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 40px;
-        height: 60px;
-        margin: auto 0 !important;
-        text-align: center;
-        color: white !important;
-        border-radius: 0 !important;
-        background-color: lightgray !important;
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s;
-    }
 }
 
 .bg-inverse {
     background-color: white !important;
 }
 
-h2{
+h2 {
     color: black;
 }
 
@@ -551,8 +531,37 @@ h2{
     box-shadow: none;
 }
 
-.contactSelection{
+.contactSelection {
     color: red;
+}
+
+@keyframes check {
+    0% {
+        height: 0;
+        width: 0;
+    }
+
+    25% {
+        height: 0;
+        width: 10px;
+    }
+
+    50% {
+        height: 20px;
+        width: 10px;
+    }
+}
+
+
+.card-header:first-child {
+    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+    font-size: 1.5em;
+}
+
+.owl-carousel.owl-theme .owl-controls {
+    .owl-prev, .owl-next {
+        background-color: #BD462C !important;
+    }
 }
 
 @keyframes check {
@@ -652,9 +661,4 @@ h2{
             }
         }
     }
-}
-
-.card-header:first-child {
-    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
-    font-size: 1.5em;
 }
