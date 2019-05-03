@@ -25,8 +25,7 @@ namespace _4SeasonsCattle2.Web.Pages
         [EmailAddress]
         public string Email { get; set; }
 
-        [BindProperty]
-        [Required]
+        [BindProperty]       
         public string Message { get; set; }
 
         [BindProperty]
@@ -45,6 +44,21 @@ namespace _4SeasonsCattle2.Web.Pages
         [Required]
         public string Zip { get; set; }
 
+        [BindProperty]
+        public string Interest1 { get; set; }
+
+        [BindProperty]
+        public string Interest2 { get; set; }
+
+        [BindProperty]
+        public string Interest3 { get; set; }
+
+        [BindProperty]
+        public string Interest4 { get; set; }
+
+        [BindProperty]
+        public string Interest5 { get; set; }
+
 
         public JsonResult OnPostContactFormSubmit()
         {
@@ -59,7 +73,7 @@ namespace _4SeasonsCattle2.Web.Pages
                 {
                     UseDefaultCredentials = false,
                     DeliveryMethod = SmtpDeliveryMethod.Network,
-                    Credentials = new NetworkCredential("josh.hill@outlook.es", "nomorehackS1"),
+                    Credentials = new NetworkCredential("josh.hill@outlook.es", "83x1LIXsIcH7"),
                     Port = 587,
                     EnableSsl = true
                 };
@@ -71,7 +85,7 @@ namespace _4SeasonsCattle2.Web.Pages
                                 <table>
                                 <tr>
                                     <td>
-                                        <strong>Name</strong>
+                                        <strong>Name:</strong>
                                     </td>
                                     <td>
                                         {Name}
@@ -79,7 +93,7 @@ namespace _4SeasonsCattle2.Web.Pages
                                 </tr>
                                 <tr>
                                     <td>
-                                        <strong>Phone</strong>
+                                        <strong>Phone:</strong>
                                     </td>
                                     <td>
                                         {Phone}
@@ -87,23 +101,15 @@ namespace _4SeasonsCattle2.Web.Pages
                                 </tr>
                                 <tr>
                                     <td>
-                                        <strong>Email</strong>
+                                        <strong>Email:</strong>
                                     </td>
                                     <td>
                                         <a href='mailto:{Email}'>{Email}</a>
                                     </td>
-                                </tr>
+                                </tr>                               
                                 <tr>
                                     <td>
-                                        <strong>Message</strong>
-                                    </td>
-                                    <td>
-                                        {Message}
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <strong>Address</strong>
+                                        <strong>Address:</strong>
                                     </td>
                                     <td>
                                         {Address}
@@ -111,7 +117,7 @@ namespace _4SeasonsCattle2.Web.Pages
                                 </tr>
                                     <tr>
                                     <td>
-                                        <strong>City</strong>
+                                        <strong>City:</strong>
                                     </td>
                                     <td>
                                         {City}
@@ -119,7 +125,7 @@ namespace _4SeasonsCattle2.Web.Pages
                                 </tr>
                                  <tr>
                                     <td>
-                                        <strong>State</strong>
+                                        <strong>State:</strong>
                                     </td>
                                     <td>
                                         {State}
@@ -127,10 +133,30 @@ namespace _4SeasonsCattle2.Web.Pages
                                 </tr>
                                 <tr>
                                     <td>
-                                        <strong>Zip</strong>
+                                        <strong>Zip:</strong>
                                     </td>
                                     <td>
                                         {Zip}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Interest:</strong>
+                                    </td>
+                                    <td>
+                                        {Interest1}:
+                                        {Interest2}:
+                                        {Interest3}:
+                                        {Interest4}:
+                                        {Interest5}:
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Message:</strong>
+                                    </td>
+                                    <td>
+                                        {Message}
                                     </td>
                                 </tr>
                             </table>";

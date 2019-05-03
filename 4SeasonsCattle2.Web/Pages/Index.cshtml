@@ -10,7 +10,7 @@
 <!-- Navigation -->
 <div class="page-top fixed-top">
     <div id="logoTag">
-        <div id="logo">
+        <div class="logo">
             <a class="js-scroll-trigger navbar-brand img" href="#page-top">
                 <img class="img-fluid" src="~/images/4seasonscattlelogo-min.jpg" href="/" alt="">
             </a>
@@ -20,10 +20,10 @@
             <span style="font-size: 20px; margin-left:5px; color: #999;">|</span>
             <a asp-page="/Gallery" class="js-scroll-trigger">Gallery</a>
             <span style="font-size: 20px; margin-left:5px; color: #999;">|</span>
-            <strong>814.937.6919</strong>
+            <strong id="phoneNumber">814.937.6919</strong>
             <span style="font-size: 20px; margin-left:5px; color: #999;">|</span>
             <a href="https://www.facebook.com/4seasonscattle/">
-                <i class="fa fa-facebook fa-fw fa-lg" style="color:#3b5998"></i>
+                <i class="fa fa-facebook-square fa-2x" style="color:#3b5998"></i>
             </a>
         </div>
     </div>
@@ -38,16 +38,16 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#page-top">Home</a>
+                        <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#page-top"><strong>Home</strong></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#products">Products</a>
+                        <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#products"><strong>Products</strong></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#about">About</a>
+                        <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#about"><strong>About</strong></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#contact">Contact</a>
+                        <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#contact"><strong>Contact</strong></a>
                     </li>
                 </ul>
             </div>
@@ -206,29 +206,65 @@
     </div>
 </section>
 
+<!-- Testimonials Section -->
+<section class="page-section testimonials" id="testimonials">
+    <div class="container wow fadeIn">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <div class="testimonials-carousel">
+                    <!-- Testimonial Item 1 -->
+                    <div class="item mb-4">
+                        <p class="lead">"Truly one of a kind."</p>
+                        <hr class="colored">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, temporibus, laborum, dignissimos doloremque corporis alias nostrum recusandae culpa id quisquam harum impedit sed sunt non obcaecati vero ipsam aut fugit?</p>                
+                        <div class="testimonial-author">
+                            <span class="name">Sarah VanKirk</span>
+                        </div>
+                    </div>
+                    <!-- Testimonial Item 2 -->
+                    <div class="item mb-4">
+                        <p class="lead">"Bold, innovative, and fresh!"</p>
+                        <hr class="colored">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem amet rem minus dolorum, facere in soluta explicabo, unde eveniet illo vel, nemo nostrum atque nesciunt facilis quaerat quasi reprehenderit dicta.</p>                  
+                        <div class="testimonial-author">
+                            <span class="name">Josh Hill</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!--Logos Section -->
 <section id="logos" class="">
     <div class="container">
         <div class="row justify-content-md-center">
-                <div class="col col-xl-9 col-lg-9">
-                    <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".4s">
-                        <a href="https://pasafarming.org/">
-                            <img src="~/images/pasalogo-min.png">
-                        </a>
-                    </div>
+            <div class="col col-xl-4 col-lg-4">
+                <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".4s">
+                    <a href="https://pasafarming.org/">
+                        <img src="~/images/pasalogo-min.png">
+                    </a>
                 </div>
-                <div class="col col-xl-3 col-lg-3" id="reddevonlogo">
-                    <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".4s">
+            </div>
+            <div class="col col-xl-4 col-lg-4">
+                <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".4s">
                     <a href="https://reddevonusa.com/home">
                         <img src="~/images/reddevonusa-min.jpg">
                     </a>
                 </div>
+            </div>
+            <div class="col col-xl-4 col-lg-4">
+                <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".4s">
+                    <a href="https://livestockconservancy.org/">
+                        <img src="~/images/livestockConserve.png">
+                    </a>
                 </div>
+            </div>
         </div>
     </div>
 </section>
 <!-- End Logos Section -->
-
 <!-- Contact Section -->
 <section class="page-section" id="contact">
     <div class="container wow fadeIn">
@@ -260,12 +296,6 @@
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-12 floating-label-form-group controls">
-                            <textarea rows="5" class="form-control" placeholder="Questions or Comments" asp-for="Message"></textarea>
-                            <span asp-validation-for="Message" class="help-block text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="row control-group">
-                        <div class="form-group col-12 floating-label-form-group controls">
                             <input type="text" class="form-control" placeholder="Address" asp-for="Address">
                             <span asp-validation-for="Address" class="help-block text-danger"></span>
                         </div>
@@ -278,8 +308,8 @@
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-12 floating-label-form-group controls">
-                            <input type="hidden" class="form-control" placeholder="State" asp-for="State">
-                            <select>
+                            <p class="contactFormP">State</p>
+                            <select asp-for="State">
                                 <option value="AL">Alabama</option>
                                 <option value="AK">Alaska</option>
                                 <option value="AZ">Arizona</option>
@@ -341,6 +371,24 @@
                             <span asp-validation-for="Zip" class="help-block text-danger"></span>
                         </div>
                     </div>
+                    <div class="row control-group">
+                        <div class="form-group col-12 floating-label-form-group controls">
+                            <p class="contactFormP">I am interested in (check any that appply)</p>
+                            <input type="checkbox" class="form-control" asp-for="Interest1" value="Red Devon Cattle">Red Devon Cattle
+                            <input type="checkbox" class="form-control" asp-for="Interest2" value="Red Devon Bull Semen">Red Devon Bull Semen
+                            <input type="checkbox" class="form-control" asp-for="Interest3" value="Red Devon Embryos">Red Devon Embryos
+                            <input type="checkbox" class="form-control" asp-for="Interest4" value="100% Grass-fed Beef">100% Grass-fed Beef
+                            <input type="checkbox" class="form-control" asp-for="Interest5" value="Pastured Pork">Pastured Pork
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-12 floating-label-form-group controls">
+                            <textarea rows="5" class="form-control" placeholder="Questions or Comments" asp-for="Message"></textarea>
+                            <span asp-validation-for="Message" class="help-block text-danger"></span>
+                        </div>
+                    </div>
+
+
                     <br>
                     <div id="success"></div>
                     <div class="row">

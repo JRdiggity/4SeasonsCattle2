@@ -18,6 +18,7 @@ a {
 .text-center {
     height: 100%;
 }
+
 .card-content {
     height: 100%;
 }
@@ -344,8 +345,8 @@ body.loading .modalload {
 }
 
 #tagline {
-  text-align:center;
-  float: right;
+    text-align: center;
+    float: right;
 }
 
 h4 {
@@ -357,15 +358,15 @@ h4 {
 }
 
 @media (max-width: 724px) {
-    #logo .navbar-brand img {
+    .logo .navbar-brand img {
         height: 55px;
     }
 }
 
 @media (max-width: 724px) {
-    #tagline{
-        font-size:15px;
-        float:right;
+    #tagline {
+        font-size: 15px;
+        float: right;
     }
 }
 
@@ -375,18 +376,23 @@ h4 {
     }
 }
 
-select{
-font-weight: 300;
-font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@media (max-width: 724px) {
+    .responsive {
+        height: 45%;
+    }
+}
+select {
+    font-weight: 300;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 
-#logoTag{
-    background:white;
+#logoTag {
+    background: white;
 }
 
-#logo{
-   display:inline-block;
+.logo {
+    display: inline-block;
 }
 
 .responsive {
@@ -395,9 +401,9 @@ font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin-top: 75px;
 }
 
-.logos{
-    height:75px;
-    text-align:center;
+.logos {
+    height: 75px;
+    text-align: center;
 }
 
 
@@ -474,4 +480,74 @@ h2 {
 .margin10 {
     margin-bottom: 10px;
     margin-right: 10px;
+}
+
+
+#phoneNumber{
+    font-size: 22px;
+}
+
+@media (max-width: 724px) {
+    #phoneNumber {
+        font-size: 17px;
+    }
+}
+
+.weatherwidget-io {
+    width: 316px;
+    border: solid 3px white;
+}
+
+
+#widgets > div {
+    display: inline-block;
+}
+
+.contactFormP {
+    font-size: 1.5em;
+    color: #495057;
+}
+
+.form-control{
+    color: red;
+}
+
+.owl-carousel.owl-theme .owl-controls {
+    .owl-prev, .owl-next {
+        font-size: 30px !important;
+        line-height: 50px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 40px;
+        height: 60px;
+        margin: auto 0 !important;
+        text-align: center;
+        color: white !important;
+        border-radius: 0 !important;
+        background-color: lightgray !important;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+}
+
+.bg-inverse {
+    background-color: white !important;
+}
+
+h2{
+    color: black;
+}
+
+.btn-secondary {
+    background-color: white;
+}
+
+.signup-form .input-group .form-control {
+    border: 1px solid black;
+}
+
+.form-control:focus {
+
+    box-shadow: none;
 }
