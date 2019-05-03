@@ -176,6 +176,7 @@
 
 <!-- About Section -->
 <section class="page-section" id="about">
+    <section>
     <div class="container-fluid">
         <div class="wow fadeIn text-center">
             <h1>WHAT WE DO</h1>
@@ -263,6 +264,7 @@
             </div>
         </div>
     </div>
+</section>
 </section>
 <!-- End Logos Section -->
 <!-- Contact Section -->
@@ -371,16 +373,56 @@
                             <span asp-validation-for="Zip" class="help-block text-danger"></span>
                         </div>
                     </div>
-                    <div class="row control-group">
-                        <div class="form-group col-12 floating-label-form-group controls">
-                            <p class="contactFormP">I am interested in (check any that appply)</p>
-                            <input type="checkbox" class="form-control" asp-for="Interest1" value="Red Devon Cattle">Red Devon Cattle
-                            <input type="checkbox" class="form-control" asp-for="Interest2" value="Red Devon Bull Semen">Red Devon Bull Semen
-                            <input type="checkbox" class="form-control" asp-for="Interest3" value="Red Devon Embryos">Red Devon Embryos
-                            <input type="checkbox" class="form-control" asp-for="Interest4" value="100% Grass-fed Beef">100% Grass-fed Beef
-                            <input type="checkbox" class="form-control" asp-for="Interest5" value="Pastured Pork">Pastured Pork
+
+                    <div class="container">
+                        <div class="row">
+                            <div>
+                                <div class="card" style="margin:50px 0">
+                                    <div class="card-header">I am interested in (check any that apply)</div>
+
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            Red Devon Cattle
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="form-control contactSelection" asp-for="Interest1" value="Red Devon Cattle">
+                                                <span class="default"></span>
+                                            </label>
+                                        </li>
+                                        <li class="list-group-item">
+                                            Red Devon Bull Semen
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="form-control contactSelection" asp-for="Interest2" value="Red Devon Bull Semen">
+                                                <span class="default"></span>
+                                            </label>
+                                        </li>
+                                        <li class="list-group-item">
+                                            Red Devon Embryos
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="form-control contactSelection" asp-for="Interest3" value="Red Devon Embryos">
+                                                <span class="default"></span>
+                                            </label>
+                                        </li>
+                                        <li class="list-group-item">
+                                            100% Grass-fed Beef
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="form-control contactSelection" asp-for="Interest4" value="100% Grass-fed Beef">
+                                                <span class="default"></span>
+                                            </label>
+                                        </li>
+                                        <li class="list-group-item">
+                                            Pastured Pork
+                                            <label class="checkbox">
+                                                <input type="checkbox" class="form-control contactSelection" asp-for="Interest5" value="Pastured Pork">
+                                                <span class="default"></span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                    <span asp-validation-for="Zip" class="help-block text-danger"></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    
                     <div class="row control-group">
                         <div class="form-group col-12 floating-label-form-group controls">
                             <textarea rows="5" class="form-control" placeholder="Questions or Comments" asp-for="Message"></textarea>
