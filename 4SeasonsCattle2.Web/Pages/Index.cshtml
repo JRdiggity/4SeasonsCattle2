@@ -38,16 +38,16 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#page-top"><strong>Home</strong></a>
+                        <a class="nav-link js-scroll-trigger hvr-underline-from-left" data-toggle="collapse" href="#page-top"><strong>Home</strong></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#products"><strong>Products</strong></a>
+                        <a class="nav-link js-scroll-trigger hvr-underline-from-left" data-toggle="collapse" href="#products"><strong>Products</strong></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#about"><strong>About</strong></a>
+                        <a class="nav-link js-scroll-trigger hvr-underline-from-left" data-toggle="collapse" href="#about"><strong>About</strong></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#contact"><strong>Contact</strong></a>
+                        <a class="nav-link js-scroll-trigger hvr-underline-from-left" data-toggle="collapse" href="#contact"><strong>Contact</strong></a>
                     </li>
                 </ul>
             </div>
@@ -106,6 +106,22 @@
                     <div class="text-center">
                         <div class="card-content">
                             <div class="card-img">
+                                <img src="~/images/cattle-min.jpg" alt="">
+                            </div>
+                            <div class="card-desc">
+                                <h3>Cattle</h3>
+                                <hr class="colored">
+                                <p>
+                                    4 Seasons Farm offers some of the finest Registered Devon seedstock bulls, heifers and cows.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="text-center">
+                        <div class="card-content">
+                            <div class="card-img">
                                 <img src="~/images/bull-semen-min.jpg" alt="">
                             </div>
                             <div class="card-desc">
@@ -115,22 +131,6 @@
                                     Our bulls offer strong, diverse pedigrees and a proven track record.
                                 </p>
                                 <h3><a asp-page="/Bulls" class="btn btn-secondary">View Our Bulls</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 mb-4">
-                    <div class="text-center">
-                        <div class="card-content">
-                            <div class="card-img">
-                                <img src="~/images/cattle-min.jpg" alt="">
-                            </div>
-                            <div class="card-desc">
-                                <h3>Cattle</h3>
-                                <hr class="colored">
-                                <p>
-                                    4 Seasons Farm offers some of the finest Registered Devon seedstock bulls, heifers and cows.
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -241,24 +241,24 @@
 <section id="logos" class="">
     <div class="container">
         <div class="row justify-content-md-center">
-            <div class="col col-xl-4 col-lg-4">
+            <div class="col col-xl-4 col-lg-4 text-center">
                 <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".4s">
                     <a href="https://pasafarming.org/">
                         <img src="~/images/pasalogo-min.png">
                     </a>
                 </div>
             </div>
-            <div class="col col-xl-4 col-lg-4">
+            <div class="col col-xl-4 col-lg-4 text-center">
                 <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".4s">
                     <a href="https://reddevonusa.com/home">
                         <img src="~/images/reddevonusa-min.jpg">
                     </a>
                 </div>
             </div>
-            <div class="col col-xl-4 col-lg-4">
+            <div class="col col-xl-4 col-lg-4 text-center">
                 <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".4s">
                     <a href="https://livestockconservancy.org/">
-                        <img src="~/images/livestockConserve.png">
+                        <img src="~/images/livestockConserve-min.png">
                     </a>
                 </div>
             </div>
@@ -367,77 +367,54 @@
                             <span asp-validation-for="State" class="help-block text-danger"></span>
                         </div>
                     </div>
+
                     <div class="row control-group">
                         <div class="form-group col-12 floating-label-form-group controls">
                             <input type="text" class="form-control" placeholder="Zip Code" asp-for="Zip">
                             <span asp-validation-for="Zip" class="help-block text-danger"></span>
                         </div>
                     </div>
-
-                    <div class="container">
-                        <div class="row">
+                    <div class="row control-group">
+                        <div class="form-group col-12 controls">
+                            <p class="contactFormP">I am interested in (check any that apply)</p>                           
                             <div>
-                                <div class="card" style="margin:50px 0">
-                                    <div class="card-header">I am interested in (check any that apply)</div>
-
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">
-                                            Red Devon Cattle
-                                            <label class="checkbox">
-                                                <input type="checkbox" class="form-control contactSelection" asp-for="Interest1" value="Red Devon Cattle">
-                                                <span class="default"></span>
-                                            </label>
-                                        </li>
-                                        <li class="list-group-item">
-                                            Red Devon Bull Semen
-                                            <label class="checkbox">
-                                                <input type="checkbox" class="form-control contactSelection" asp-for="Interest2" value="Red Devon Bull Semen">
-                                                <span class="default"></span>
-                                            </label>
-                                        </li>
-                                        <li class="list-group-item">
-                                            Red Devon Embryos
-                                            <label class="checkbox">
-                                                <input type="checkbox" class="form-control contactSelection" asp-for="Interest3" value="Red Devon Embryos">
-                                                <span class="default"></span>
-                                            </label>
-                                        </li>
-                                        <li class="list-group-item">
-                                            100% Grass-fed Beef
-                                            <label class="checkbox">
-                                                <input type="checkbox" class="form-control contactSelection" asp-for="Interest4" value="100% Grass-fed Beef">
-                                                <span class="default"></span>
-                                            </label>
-                                        </li>
-                                        <li class="list-group-item">
-                                            Pastured Pork
-                                            <label class="checkbox">
-                                                <input type="checkbox" class="form-control contactSelection" asp-for="Interest5" value="Pastured Pork">
-                                                <span class="default"></span>
-                                            </label>
-                                        </li>
-                                    </ul>
-                                    <span asp-validation-for="Zip" class="help-block text-danger"></span>
+                                <input asp-for="Interest1" value="Red Devon Cattle" type="checkbox">
+                                <label>Red Devon Cattle</label>
+                            </div>
+                                <div>
+                                    <input asp-for="Interest2" value="Red Devon Bull Semen" type="checkbox">
+                                    <label>Red Devon Bull Semen</label>
                                 </div>
+                                <div>
+                                    <input asp-for="Interest3" value="Red Devon Embryos" type="checkbox">
+                                    <label>Red Devon Embryos</label>
+                                </div>
+                                <div>
+                                    <input asp-for="Interest4" value="100% Grass-fed Beef" type="checkbox">
+                                    <label>100% Grass-fed Beef</label>
+                                </div>
+                                <div>
+                                    <input asp-for="Interest5" value="Pastured Pork" type="checkbox">
+                                    <label>Pastured Pork</label>
+                                </div>         
+                            <div class="floating-label-form-group"></div>
+                        </div>
+                      </div>
+                        <div class="row control-group">
+                            <div class="form-group col-12 floating-label-form-group controls">
+                                <textarea rows="5" class="form-control" placeholder="Questions or Comments" asp-for="Message"></textarea>
+                                <span asp-validation-for="Message" class="help-block text-danger"></span>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="row control-group">
-                        <div class="form-group col-12 floating-label-form-group controls">
-                            <textarea rows="5" class="form-control" placeholder="Questions or Comments" asp-for="Message"></textarea>
-                            <span asp-validation-for="Message" class="help-block text-danger"></span>
-                        </div>
-                    </div>
 
 
-                    <br>
-                    <div id="success"></div>
-                    <div class="row">
-                        <div class="form-group col-12">
-                            <button id="btnSubmitContactForm" type="submit" class="btn btn-secondary">Send</button>
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-12">
+                                <button id="btnSubmitContactForm" type="submit" class="btn btn-secondary">Send</button>
+                            </div>
                         </div>
-                    </div>
                 </form>
             </div>
         </div>
