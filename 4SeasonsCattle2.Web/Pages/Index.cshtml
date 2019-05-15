@@ -38,16 +38,16 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger hvr-underline-from-left" data-toggle="collapse" href="#page-top"><strong>Home</strong></a>
+                        <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#page-top"><strong>Home</strong></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger hvr-underline-from-left" data-toggle="collapse" href="#products"><strong>Products</strong></a>
+                        <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#products"><strong>Products</strong></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger hvr-underline-from-left" data-toggle="collapse" href="#about"><strong>About</strong></a>
+                        <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#about"><strong>About</strong></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger hvr-underline-from-left" data-toggle="collapse" href="#contact"><strong>Contact</strong></a>
+                        <a class="nav-link js-scroll-trigger" data-toggle="collapse" href="#contact"><strong>Contact</strong></a>
                     </li>
                 </ul>
             </div>
@@ -70,13 +70,13 @@
         <!--Slides-->
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-                <img src="~/images/redcows.jpg" alt="Smiley face" class="responsive">
+                <img src="~/images/redcows-min.jpg" alt="Smiley face" class="responsive">
             </div>
             <div class="carousel-item">
-                <img src="~/images/blackwhitecows.jpg" alt="Smiley face" class="responsive">
+                <img src="~/images/blackwhitecows-min.jpg" alt="Smiley face" class="responsive">
             </div>
             <div class="carousel-item">
-                <img src="~/images/redwhitecows.jpg" alt="Smiley face" class="responsive">
+                <img src="~/images/redwhitecows-min.jpg" alt="Smiley face" class="responsive">
             </div>
         </div>
         <!--/.Slides-->
@@ -215,20 +215,29 @@
                 <div class="testimonials-carousel">
                     <!-- Testimonial Item 1 -->
                     <div class="item mb-4">
-                        <p class="lead">"Truly one of a kind."</p>
+                        <p class="lead">"Well managed and forward thinking."</p>
                         <hr class="colored">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, temporibus, laborum, dignissimos doloremque corporis alias nostrum recusandae culpa id quisquam harum impedit sed sunt non obcaecati vero ipsam aut fugit?</p>                
+                        <p>“Focused, well managed, and forward thinking. Great Red Devon genetics for grass fed beef.”</p>
                         <div class="testimonial-author">
-                            <span class="name">Sarah VanKirk</span>
+                            <span class="name">Jenny Kahrl</span>
                         </div>
                     </div>
                     <!-- Testimonial Item 2 -->
                     <div class="item mb-4">
-                        <p class="lead">"Bold, innovative, and fresh!"</p>
+                        <p class="lead">"Awesome product!"</p>
                         <hr class="colored">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem amet rem minus dolorum, facere in soluta explicabo, unde eveniet illo vel, nemo nostrum atque nesciunt facilis quaerat quasi reprehenderit dicta.</p>                  
+                        <p>“Awesome product, well cared-for animals, great service!”</p>
                         <div class="testimonial-author">
-                            <span class="name">Josh Hill</span>
+                            <span class="name">Amy Gregory</span>
+                        </div>
+                    </div>
+                    <!-- Testimonial Item 3 -->
+                    <div class="item mb-4">
+                        <p class="lead">"Won't go anywhere else."</p>
+                        <hr class="colored">
+                        <p>“Great. Been getting meat here for several years now. Won't go anywhere else.”</p>
+                        <div class="testimonial-author">
+                            <span class="name">Tim Roe</span>
                         </div>
                     </div>
                 </div>
@@ -378,24 +387,24 @@
                         <div class="form-group col-12 controls">
                             <p class="contactFormP">I am interested in (check any that apply)</p>                           
                             <div>
-                                <input asp-for="Interest1" value="Red Devon Cattle" type="checkbox">
-                                <label>Red Devon Cattle</label>
+                                <input asp-for="RedDevonCattle" value="Red Devon Cattle" type="checkbox">
+                                <label asp-for="RedDevonCattle">Red Devon Cattle</label>
                             </div>
                                 <div>
-                                    <input asp-for="Interest2" value="Red Devon Bull Semen" type="checkbox">
-                                    <label>Red Devon Bull Semen</label>
+                                    <input asp-for="RedDevonSemen" value="Red Devon Bull Semen" type="checkbox">
+                                    <label asp-for="RedDevonSemen">Red Devon Bull Semen</label>
                                 </div>
                                 <div>
-                                    <input asp-for="Interest3" value="Red Devon Embryos" type="checkbox">
-                                    <label>Red Devon Embryos</label>
+                                    <input asp-for="RedDevonEmbryos" value="Red Devon Embryos" type="checkbox">
+                                    <label asp-for="RedDevonEmbryos">Red Devon Embryos</label>
                                 </div>
                                 <div>
-                                    <input asp-for="Interest4" value="100% Grass-fed Beef" type="checkbox">
-                                    <label>100% Grass-fed Beef</label>
+                                    <input asp-for="GrassFedBeef" value="100% Grass-fed Beef" type="checkbox">
+                                    <label asp-for="GrassFedBeef">100% Grass-fed Beef</label>
                                 </div>
                                 <div>
-                                    <input asp-for="Interest5" value="Pastured Pork" type="checkbox">
-                                    <label>Pastured Pork</label>
+                                    <input asp-for="PasturedPork" value="Pastured Pork" type="checkbox">
+                                    <label asp-for="PasturedPork">Pastured Pork</label>
                                 </div>         
                             <div class="floating-label-form-group"></div>
                         </div>

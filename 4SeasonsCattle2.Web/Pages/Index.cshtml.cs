@@ -44,20 +44,26 @@ namespace _4SeasonsCattle2.Web.Pages
         [Required]
         public string Zip { get; set; }
 
-        [BindProperty]
-        public string Interest1 { get; set; }
 
-        [BindProperty]
-        public string Interest2 { get; set; }
 
-        [BindProperty]
-        public string Interest3 { get; set; }
 
-        [BindProperty]
-        public string Interest4 { get; set; }
+            [BindProperty]
+            public bool RedDevonCattle { get; set; }
 
-        [BindProperty]
-        public string Interest5 { get; set; }
+            [BindProperty]
+            public bool RedDevonSemen { get; set; }
+
+            [BindProperty]
+            public bool RedDevonEmbryos { get; set; }
+
+            [BindProperty]
+            public bool GrassFedBeef { get; set; }
+
+            [BindProperty]
+            public bool PasturedPork { get; set; }
+
+
+
 
 
         public JsonResult OnPostContactFormSubmit()
@@ -144,11 +150,11 @@ namespace _4SeasonsCattle2.Web.Pages
                                         <strong>Interest:</strong>
                                     </td>
                                     <td>
-                                        {Interest1}:
-                                        {Interest2}:
-                                        {Interest3}:
-                                        {Interest4}:
-                                        {Interest5}:
+                                        <p>RedDevonCattle: {(RedDevonCattle ? "Yes" : "No")}</p>
+                                        <p>RedDevonSemen: {(RedDevonSemen ? "Yes" : "No")}</p>
+                                        <p>RedDevonEmbryos: {(RedDevonEmbryos ? "Yes" : "No")}</p>
+                                        <p>GrassFedBeef: {(GrassFedBeef ? "Yes" : "No")}</p>
+                                        <p>PasturedPork: {(PasturedPork ? "Yes" : "No")}</p>
                                     </td>
                                 </tr>
                                 <tr>
