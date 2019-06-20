@@ -205,7 +205,10 @@ section {
     margin: 0px;
     margin-bottom: 20px;
     padding: 0;
-    font-family: 'Raleway', sans-serif; }
+    font-family: 'Raleway', sans-serif; 
+    text-align: left;
+  }
+
 
 .btn-card {
   background-color: #1ABC9C;
@@ -448,3 +451,16 @@ h2 {
 .img-fluid {
   margin-left: 10%;
   text-decoration: none; }
+
+.card-center {
+    text-align: center;
+}
+
+.modal-body {
+    text-align: left;
+}
+
+h6 {
+    font-weight: 200;
+    font-family: 'Raleway';
+}
