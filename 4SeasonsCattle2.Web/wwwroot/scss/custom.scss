@@ -12,7 +12,7 @@ a {
         color: black;
     }
 
-    color: #BD462C;
+    color: #7f0000;
 }
 
 .text-center {
@@ -41,7 +41,7 @@ footer.footer {
     font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 900;
     text-transform: uppercase;
-    color: #BD462C;
+    color: #7f0000;
     font-size: 20px;
 }
 
@@ -72,7 +72,7 @@ header.masthead .scroll-down .btn {
     text-align: center;
 
     &:hover, &:focus, &:active, &.active {
-        color: #BD462C;
+        color: #7f0000;
         background-color: #F9F9F9;
         border-color: black;
         text-align: center;
@@ -91,7 +91,7 @@ header.masthead .scroll-down .btn {
     border-color: black;
 
     &:hover, &:focus, &:active, &.active {
-        color: #BD462C;
+        color: #7f0000;
         background-color: #F9F9F9;
         text-align: center;
         outline: none;
@@ -112,23 +112,22 @@ header.masthead .scroll-down .btn {
 
 
 hr.colored {
-    border-color: #BD462C;
+    border-color: #7f0000;
 }
 
 #mainNav {
     .navbar-collapse .navbar-nav > .nav-item > .nav-link {
         &.active {
-            color: #BD462C;
+            color: #7f0000;
             border-radius: 0;
             border-radius: 5px;
             outline: none;
 
             &:focus, &:hover {
-                color: #BD462C;
+                color: #7f0000;
                 border-radius: 0;
                 border-radius: 5px;
                 outline: none;
-                background-color: white;
             }
         }
 
@@ -138,8 +137,7 @@ hr.colored {
         color: black;
 
         &:focus, &:hover {
-            color: #BD462C;
-            background-color: white;
+            color: #7f0000;
         }
     }
 
@@ -175,7 +173,7 @@ hr.colored {
 }
 
 .btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
-    color: #BD462C !important;
+    color: #7f0000 !important;
     border-color: black !important;
     background-color: #F9F9F9 !important;
     box-shadow: none;
@@ -560,7 +558,7 @@ h2 {
 
 .owl-carousel.owl-theme .owl-controls {
     .owl-prev, .owl-next {
-        background-color: #BD462C !important;
+        background-color: #7f0000 !important;
     }
 }
 
@@ -593,5 +591,35 @@ h2 {
     text-decoration: none;
 }
 
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
 
+.hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #2098D1;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+}
 

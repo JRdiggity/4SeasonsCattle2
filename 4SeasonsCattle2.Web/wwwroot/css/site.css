@@ -116,7 +116,6 @@ h6 {
 
         #mainNav .navbar-toggler:focus, #mainNav .navbar-toggler:hover {
             color: #222;
-            background-color: white;
         }
 
     #mainNav .navbar-brand {
@@ -183,9 +182,7 @@ h6 {
 
                 #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link.active, #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link.active:focus, #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link.active:hover {
                     color: #0A8FD5;
-                    border-radius: 0;
-                    border-radius: 5px;
-                    background-color: white;
+                    border-radius: 0;                
                 }
 }
 

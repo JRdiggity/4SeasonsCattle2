@@ -6,7 +6,7 @@
   box-shadow: none !important; }
 
 a {
-  color: #BD462C; }
+  color: #7f0000; }
   a:hover, a:focus {
     color: black; }
 
@@ -29,7 +29,7 @@ footer.footer .copyright, footer.footer p, footer.footer a {
   font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 900;
   text-transform: uppercase;
-  color: #BD462C;
+  color: #7f0000;
   font-size: 20px; }
 
 .hidden {
@@ -54,7 +54,7 @@ header.masthead .scroll-down .btn {
   border-color: black;
   text-align: center; }
   #bullBtn:hover, #bullBtn:focus, #bullBtn:active, #bullBtn.active {
-    color: #BD462C;
+    color: #7f0000;
     background-color: #F9F9F9;
     border-color: black;
     text-align: center;
@@ -70,7 +70,7 @@ header.masthead .scroll-down .btn {
   border-radius: 5px;
   border-color: black; }
   #buyBtn:hover, #buyBtn:focus, #buyBtn:active, #buyBtn.active {
-    color: #BD462C;
+    color: #7f0000;
     background-color: #F9F9F9;
     text-align: center;
     outline: none;
@@ -87,7 +87,7 @@ header.masthead .scroll-down .btn {
   /*display: flex;*/ }
 
 hr.colored {
-  border-color: #BD462C; }
+  border-color: #7f0000; }
 
 #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link {
   padding: 15px;
@@ -95,19 +95,17 @@ hr.colored {
   padding-bottom: 15px;
   color: black; }
   #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link.active {
-    color: #BD462C;
+    color: black;
     border-radius: 0;
     border-radius: 5px;
     outline: none; }
     #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link.active:focus, #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link.active:hover {
-      color: #BD462C;
+      color: black;
       border-radius: 0;
       border-radius: 5px;
-      outline: none;
-      background-color: white; }
+      outline: none; }
   #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link:focus, #mainNav .navbar-collapse .navbar-nav > .nav-item > .nav-link:hover {
-    color: #BD462C;
-    background-color: white; }
+    color: #7f0000; }
 
 #mainNav.navbar-shrink {
   padding: 5px 0;
@@ -133,7 +131,7 @@ hr.colored {
   color: red; }
 
 .btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
-  color: #BD462C !important;
+  color: #7f0000 !important;
   border-color: black !important;
   background-color: #F9F9F9 !important;
   box-shadow: none; }
@@ -196,17 +194,16 @@ section {
     margin-top: 0;
     margin-bottom: 5px;
     padding: 0; }
-    .card-desc p {
-        color: #383838;
-        font-size: 14px;
-        font-weight: 500;
-        font-size: 1em;
-        line-height: 1.5;
-        margin: 0px;
-        margin-bottom: 20px;
-        padding: 0;
-        font-family: 'Arial', sans-serif;
-    }
+  .card-desc p {
+    color: #747373;
+    font-size: 14px;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0px;
+    margin-bottom: 20px;
+    padding: 0;
+    font-family: 'Raleway', sans-serif; }
 
 .btn-card {
   background-color: #1ABC9C;
@@ -427,7 +424,7 @@ h2 {
   font-size: 1.5em; }
 
 .owl-carousel.owl-theme .owl-controls .owl-prev, .owl-carousel.owl-theme .owl-controls .owl-next {
-  background-color: #BD462C !important; }
+  background-color: #7f0000 !important; }
 
 @keyframes check {
   0% {
@@ -449,3 +446,34 @@ h2 {
 .img-fluid {
   margin-left: 10%;
   text-decoration: none; }
+
+
+
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden; }
+
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: black;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; }
+
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0; }
